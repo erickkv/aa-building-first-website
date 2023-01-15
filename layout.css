@@ -1,0 +1,59 @@
+/*set same font family to everything*/
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*add padding to each page´s main content*/
+.main {
+    padding: 1rem 10% 1rem;
+    margin: auto;
+}
+
+/* header (for index.html only) */
+.header {
+    padding: 1rem;
+    text-align: center;
+    background: black;
+    color: white;
+  }
+
+.navbar {
+    overflow: hidden;
+    background-color: #293440;
+    text-align: center;
+    display: flex;
+    height: 2rem;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+}
+
+a {
+    color: #1A4C81;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+  }
+
+.grid-container {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+/* to make the <img> fit inside the grid space */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-item {
+    border: 1px solid black;
+  }
