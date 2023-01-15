@@ -13,5 +13,65 @@
             <a href="./references.html">References</a>
             <a href="./gallery.html">Gallery</a>
         </div>
+
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+            <legend>Add user</legend>
+
+            <div>
+                <label class="block" for="firstName">First name</label>
+                <input type="text" id="firstName" name="first_name">
+            </div>
+            <br>
+            <div>
+                <label class="block" for="lastName">Last name</label>
+                <input type="text" id="lastName" name="last_name">
+            </div>
+            <br>
+            <div>
+                <label class="block" for="email">Email</label>
+                <input type="email" id="email" name="email_address">
+            </div>
+            <br>
+            <div>
+                <div class="inline_div">
+                    <label class="block" for="role">Status</label>
+                    <select id="role" name="user_role_name">
+                    <option value="student">Student</option>
+                    <option value="instructor">Instructor</option>
+                    <option value="guest">Guest</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div>
+                <p>Do you think automation is good?:</p>
+                <input type="radio" id="a_good" name="auto_good" value="HTML">
+                <label for="a_good">Yes</label>
+                <input type="radio" id="a_bad" name="auto_good" value="CSS">
+                <label for="a_bad">No</label>
+
+            </div>
+            <br>
+            <div>
+                <label class="block_left" for="comments">Comments</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+            <br>
+
+            <div>
+                <input type="checkbox" id="terms" name="terms" value="Terms">
+                <label class="inline_label" for="terms"> Agree to terms and conditions</label>
+            </div>
+            <br>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+            </fieldset>
+        </form>
+
     </body>
 </html>
